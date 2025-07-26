@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">Open University</div>
+                <div class="avatar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs_Z8NkJTKQmhsyBuGnRsAgd7TiOPuaf7Raw&s" alt="User">
+
+                </div>
+            </div>
+            <nav class="sidebar-menu">
+                <a class="active" href="#">Home</a>
+                <a href="#">Manage Staff</a>
+                <a href="#">Add Staff</a>
+                <a href="#">Manage Student</a>
+                <a href="#">Add Student</a>
+                <a href="#">Manage Course</a>
+                <a href="#">Add Course</a>
+                <a href="#">Manage Subject</a>
+                <a href="#">Add Subject</a>
+                <a href="#">Manage Session</a>
+                <a href="#">Add Session</a>
+                <a href="#">View Attendance</a>
+                <a href="#">Student Feedback</a>
+                <a href="#">Staff Feedback</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <div class="top-cards">
+                <div class="card student">
+                    <div class="count">0</div>
+                    <div class="label">Total Students</div>
+                    <div class="info">More info <span>➔</span></div>
+                </div>
+                <div class="card staff">
+                    <div class="count">3</div>
+                    <div class="label">Total Staffs</div>
+                    <div class="info">More info <span>➔</span></div>
+                </div>
+                <div class="card course">
+                    <div class="count">8</div>
+                    <div class="label">Total Courses</div>
+                    <div class="info">More info <span>➔</span></div>
+                </div>
+                <div class="card subject">
+                    <div class="count">2</div>
+                    <div class="label">Total Subjects</div>
+                    <div class="info">More info <span>➔</span></div>
+                </div>
+            </div>
+
+            <div class="charts">
+                <div class="chart-box">
+                    <div class="chart-header">Student and Staff Chart</div>
+                    <canvas id="chart1"></canvas>
+                </div>
+                <div class="chart-box">
+                    <div class="chart-header">Total Subjects in Each Course</div>
+                    <canvas id="chart2"></canvas>
+                </div>
+                <div class="chart-box">
+                    <div class="chart-header">Total Student in Each Course</div>
+                    <canvas id="chart3"></canvas>
+                </div>
+                <div class="chart-box">
+                    <div class="chart-header">Total Students in Each Subject</div>
+                    <canvas id="chart4"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
